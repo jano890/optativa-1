@@ -1,0 +1,42 @@
+// Funcion para restar numeros
+Funcion resta
+    Definir n, i, op Como Entero
+    Definir resultado Como Real
+    Dimension num[10] 
+    
+    Limpiar Pantalla
+    Escribir "cuantos numeros desea restar (maximo 10 minimo 2)"
+    Leer n
+    
+    Si n > 10 o n < 2 Entonces
+        Escribir "cantidad de numeros invalido"
+        resta
+    Sino
+        Para i <- 0 Hasta n-1 Hacer
+            Escribir "ingrese el numero ", i+1, ":"
+            Leer num[i]
+        FinPara
+        
+        resultado <- num[0]
+        Para i <- 1 Hasta n-1 Hacer
+            resultado <- resultado - num[i]
+        FinPara
+        
+        Escribir "la resta total es: ", resultado
+    FinSi
+    
+    Escribir "desea realizar otra resta"
+    Escribir "1 si 2 no"
+    Leer op
+    
+    Si op < 1 o op > 2 Entonces
+        Escribir "opcion no valida"
+        menu_ope
+    FinSi
+    
+    Si op = 1 Entonces
+        resta
+    Sino
+        menu_ope
+    FinSi
+FinFuncion
