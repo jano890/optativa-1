@@ -1,0 +1,78 @@
+// Calcula la moda
+Funcion moda
+    Definir n, i, j, op, maxfrec, contador Como Entero
+    Definir modavalor Como Real
+    Dimension num[100] 
+    Dimension frec[100] 
+    
+    Limpiar Pantalla
+    Escribir "de cuantos numeros desea calcular la moda (maximo 100 minimo 2)"
+    Leer n
+    
+    Si n > 100 o n < 2 Entonces
+        Escribir "cantidad de numeros invalido"
+        Esperar Tecla
+        moda
+    Sino
+        Para i <- 0 Hasta n-1 Hacer
+            Escribir "ingrese el numero ", i+1, ":"
+            Leer num[i]
+        FinPara
+        
+        Para i <- 0 Hasta n-1 Hacer
+            frec[i] <- 1
+        FinPara
+        
+        Para i <- 0 Hasta n-1 Hacer
+            Para j <- i+1 Hasta n-1 Hacer
+                Si num[i] = num[j] Entonces
+                    frec[i] <- frec[i] + 1
+                FinSi
+            FinPara
+        FinPara
+        
+        maxfrec <- 0
+        modavalor <- num[0]
+        contador <- 0
+        
+        Para i <- 0 Hasta n-1 Hacer
+            Si frec[i] > maxfrec Entonces
+                maxfrec <- frec[i]
+                modavalor <- num[i]
+                contador <- 1
+            Sino 
+                Si frec[i] = maxfrec Y num[i] <> modavalor Entonces
+                    contador <- contador + 1
+                FinSi
+            FinSi
+        FinPara
+        
+        Si maxfrec = 1 Entonces
+            Escribir "no hay moda todos los numeros son unicos"
+        Sino
+            Si contador > 1 Entonces
+                Escribir "hay multiples modas con frecuencia ", maxfrec
+                Escribir "una de las modas es ", modavalor
+            Sino
+                Escribir "moda ", modavalor
+                Escribir "frecuencia ", maxfrec
+            FinSi
+        FinSi
+    FinSi
+    
+    Escribir "desea realizar otro calculo"
+    Escribir "1 si 2 no"
+    Leer op
+    
+    Si op < 1 o op > 2 Entonces
+        Escribir "opcion no valida"
+        Esperar Tecla
+        moda
+    FinSi
+    
+    Si op = 1 Entonces
+        moda
+	SiNo
+		esta
+    FinSi
+FinFuncion
