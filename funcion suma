@@ -1,0 +1,38 @@
+// Funcion para sumar numeros
+Funcion suma
+    Definir n, i, op Como Entero
+    Definir sum Como Real
+    Dimension num[10] 
+    
+    sum <- 0
+    Limpiar Pantalla
+    Escribir "cuantos numeros desea sumar (maximo 10 minimo 2)"
+    Leer n
+    
+    Si n > 10 o n < 2 Entonces
+        Escribir "cantidad de numeros invalido"
+        suma
+    Sino
+        Para i <- 0 Hasta n-1 Hacer
+            Escribir "ingrese el numero ", i+1, ":"
+            Leer num[i]
+            sum <- sum + num[i]
+        FinPara
+        Escribir "la suma total es: ", sum
+    FinSi
+    
+    Escribir "desea realizar otra suma"
+    Escribir "1 si 2 no"
+    Leer op
+    
+    Si op < 1 o op > 2 Entonces
+        Escribir "opcion no valida"
+        menu_ope
+    FinSi
+    
+    Si op = 1 Entonces
+        suma
+    Sino
+        menu_ope
+    FinSi
+FinFuncion
