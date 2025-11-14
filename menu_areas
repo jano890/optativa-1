@@ -1,0 +1,25 @@
+// Menu de areas geometricas
+Funcion menu_areas
+    Definir op Como Entero
+    
+    Limpiar Pantalla
+    Escribir "1 circulo"
+    Escribir "2 cuadrado"
+    Escribir "3 triangulo"
+    Escribir "4 trapecio"
+    Escribir "5 volver"
+    Leer op
+    
+    Segun op Hacer
+        1:
+            circulo
+        2:
+            cuadrado
+        3:
+            triangulo
+        4:
+            trapecio
+        5:
+            proyecto_intp1
+    FinSegun
+FinFuncion
