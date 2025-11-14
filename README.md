@@ -1,2 +1,5 @@
 # optativa-1
-docunetacion completa de la calcualdora desarolla en pseint 
+documentacion completa de la optativa uno de la materia de proyecto integrador 
+
+contenido:
+
