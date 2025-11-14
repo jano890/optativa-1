@@ -1,0 +1,22 @@
+// Calcula area del circulo
+Funcion circulo
+    Definir radio, area, cuad Como Real
+    Definir op Como Entero
+    
+    Limpiar Pantalla
+    Escribir "ingrese el radio"
+    Leer radio
+    cuad <- radio * radio
+    area <- 3.1416 * cuad
+    Escribir "el area del circulo es: ", area
+    
+    Escribir "desea realizar otra operacion"
+    Escribir "1 si 2 no"
+    Leer op
+    
+    Si op = 1 Entonces
+        circulo
+    Sino
+        menu_areas
+    FinSi
+FinFuncion
