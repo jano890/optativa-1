@@ -1,0 +1,22 @@
+Algoritmo proyecto_intp1
+    Definir op Como Entero
+    
+    Limpiar Pantalla
+    Escribir "bienvenido que desea hacer"
+    Escribir "1 calculos matematicos basicos"
+    Escribir "2 calculo de area geometrica"
+    Escribir "3 estadistica basica"
+    Escribir "4 secuencia de fibonachi"
+    Leer op
+    
+    Segun op Hacer
+        1:
+            menu_ope
+        2:
+            menu_areas
+        3:
+            esta
+        4:
+            fibo
+    FinSegun
+FinAlgoritmo
