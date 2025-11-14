@@ -1,0 +1,39 @@
+// Calcula la media (promedio)
+Funcion media
+    Definir n, i, op Como Entero
+    Definir sum, resultado Como Real
+    Dimension num[100]
+    
+    sum <- 0
+    Limpiar Pantalla
+    Escribir "de cuantos numeros desea calcular la media (maximo 100 minimo 2)"
+    Leer n
+    
+    Si n > 100 o n < 2 Entonces
+        Escribir "cantidad de numeros invalido"
+        media
+    Sino
+        Para i <- 0 Hasta n-1 Hacer
+            Escribir "ingrese el numero ", i+1, ":"
+            Leer num[i]
+            sum <- sum + num[i]
+        FinPara
+        resultado <- sum / n
+        Escribir "la media es: ", resultado
+    FinSi
+    
+    Escribir "desea realizar otro calculo"
+    Escribir "1 si 2 no"
+    Leer op
+    
+    Si op < 1 o op > 2 Entonces
+        Escribir "opcion no valida"
+        esta
+    FinSi
+    
+    Si op = 1 Entonces
+        media
+    Sino
+        esta
+    FinSi
+FinFuncion
