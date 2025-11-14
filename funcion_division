@@ -1,0 +1,38 @@
+// Funcion para multiplicar numeros
+Funcion multiplicacion
+    Definir n, i, op Como Entero
+    Definir mult Como Real
+    Dimension num[10] 
+    
+    mult <- 1
+    Limpiar Pantalla
+    Escribir "cuantos numeros desea multiplicar (maximo 10 minimo 2)"
+    Leer n
+    
+    Si n > 10 o n < 2 Entonces
+        Escribir "cantidad de numeros invalido"
+        multiplicacion
+    Sino
+        Para i <- 0 Hasta n-1 Hacer
+            Escribir "ingrese el numero ", i+1, ":"
+            Leer num[i]
+            mult <- mult * num[i]
+        FinPara
+        Escribir "la multiplicacion total es: ", mult
+    FinSi
+    
+    Escribir "desea realizar otra multiplicacion"
+    Escribir "1 si 2 no"
+    Leer op
+    
+    Si op < 1 o op > 2 Entonces
+        Escribir "opcion no valida"
+        menu_ope
+    FinSi
+    
+    Si op = 1 Entonces
+        multiplicacion
+    Sino
+        menu_ope
+    FinSi
+FinFuncion
