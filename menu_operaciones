@@ -1,0 +1,25 @@
+// Menu principal de operaciones matematicas
+Funcion menu_ope
+    Definir op Como Entero
+    
+    Limpiar Pantalla
+    Escribir "1 suma"
+    Escribir "2 resta"
+    Escribir "3 multiplicacion"
+    Escribir "4 division"
+    Escribir "5 volver"
+    Leer op
+    
+    Segun op Hacer
+        1:
+            suma
+        2:
+            resta
+        3:
+            multiplicacion
+        4:
+            division
+        5:
+            proyecto_intp1
+    FinSegun
+FinFuncion
