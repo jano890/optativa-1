@@ -1,0 +1,44 @@
+// Genera secuencia de Fibonacci
+Funcion fibo
+    Definir n, i, op Como Entero
+    Definir a, b, c Como Entero
+    
+    Limpiar Pantalla
+    Escribir "cuantos terminos de fibonacci desea generar (maximo 50 minimo 2)"
+    Leer n
+    
+    Si n > 50 o n < 2 Entonces
+        Escribir "cantidad de terminos invalido"
+        Esperar Tecla
+        fibo
+    Sino
+        a <- 0
+        b <- 1
+        Escribir "secuencia de fibonacci:"
+        Escribir a
+        Escribir b
+        
+        Para i <- 3 Hasta n Hacer
+            c <- a + b
+            Escribir c
+            a <- b
+            b <- c
+        FinPara
+    FinSi
+    
+    Escribir "desea generar otra secuencia"
+    Escribir "1 si 2 no"
+    Leer op
+    
+    Si op < 1 o op > 2 Entonces
+        Escribir "opcion no valida"
+        Esperar Tecla
+        fibo
+    FinSi
+    
+    Si op = 1 Entonces
+        fibo
+	SiNo
+		proyecto_intp1
+    FinSi
+FinFuncion
