@@ -1,0 +1,22 @@
+Funcion triangulo
+    Definir base, altura, area Como Real
+    Definir op Como Entero
+    
+    Limpiar Pantalla
+    Escribir "ingrese la base"
+    Leer base
+    Escribir "ingrese la altura"
+    Leer altura
+    area <- (base * altura) / 2
+    Escribir "el area del triangulo es: ", area
+    
+    Escribir "desea realizar otra operacion"
+    Escribir "1 si 2 no"
+    Leer op
+    
+    Si op = 1 Entonces
+        triangulo
+    Sino
+        menu_areas
+    FinSi
+FinFuncion
