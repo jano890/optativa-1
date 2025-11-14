@@ -1,0 +1,23 @@
+// Calcula area del cuadrado
+Funcion cuadrado
+    Definir base, altura, area Como Real
+    Definir op Como Entero
+    
+    Limpiar Pantalla
+    Escribir "ingrese la base"
+    Leer base
+    Escribir "ingrese la altura"
+    Leer altura
+    area <- base * altura
+    Escribir "el area del cuadrado es: ", area
+    
+    Escribir "desea realizar otra operacion"
+    Escribir "1 si 2 no"
+    Leer op
+    
+    Si op = 1 Entonces
+        cuadrado
+    Sino
+        menu_areas
+    FinSi
+FinFuncion
