@@ -1,0 +1,25 @@
+// Calcula area del trapecio
+Funcion trapecio
+    Definir baseme, baseM, altura, area Como Real
+    Definir op Como Entero
+    
+    Limpiar Pantalla
+    Escribir "ingrese la base mayor"
+    Leer baseM
+    Escribir "ingrese la base menor"
+    Leer baseme
+    Escribir "ingrese la altura"
+    Leer altura
+    area <- ((baseM + baseme) * altura) / 2
+    Escribir "el area del trapecio es: ", area
+    
+    Escribir "desea realizar otra operacion"
+    Escribir "1 si 2 no"
+    Leer op
+    
+    Si op = 1 Entonces
+        trapecio
+    Sino
+        menu_areas
+    FinSi
+FinFuncion
