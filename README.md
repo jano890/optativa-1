@@ -1,5 +1,2 @@
 # optativa-1
-documentacion completa de la optativa uno de la materia de proyecto integrador 
-
-contenido:
-
+los archivos marcados como funcion son la manera de hacer los calculos. los archivos que tiene la terminacion .jpg son los digras de flujo del funcionamiento de cada parte. RECORDATRIO ¡EL MENU Y LAS FUNCIONES VAN LIGADOS DIREACTAMENTE CON EL MENU PRINCIPAL, EN LE DAOD CASO QUE SE QUIERA CAMBAIR EL NOBRE RECORDAR QUE SE DEBE DE CAMABIAR En EL MENU PRINCIPAL!
