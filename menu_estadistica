@@ -1,0 +1,22 @@
+// Menu de estadistica
+Funcion esta
+    Definir op Como Entero
+    
+    Limpiar Pantalla
+    Escribir "1 media"
+    Escribir "2 mediana"
+    Escribir "3 moda"
+    Escribir "4 volver"
+    Leer op
+    
+    Segun op Hacer
+        1:
+            media
+        2:
+            mediana
+        3:
+            moda
+        4:
+            proyecto_intp1
+    FinSegun
+FinFuncion
